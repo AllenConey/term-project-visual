@@ -1,101 +1,185 @@
 <!doctype html>
+<html lang="en">
 
-
-/* TIMELINE */
-ul.timeline { list-style:none; padding:0; }
-ul.timeline li { background:#fff; padding:20px; margin-bottom:20px; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.1); cursor:pointer; transition:0.2s; }
-ul.timeline li:hover { transform:translateX(5px); }
-
-
-/* CONTACT */
-form input, form textarea { width:100%; padding:14px; margin-top:10px; border-radius:8px; border:1px solid #ccc; }
-form button { background:#000; color:#fff; padding:12px 24px; border:none; border-radius:8px; margin-top:20px; cursor:pointer; }
-
-
-</style>
+<head>
+  <meta charset="utf-8">
+  <title>The Hate U Give Project</title>
+  <meta name="description" content="Interactive visual project for The Hate U Give by Angie Thomas">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
-
 <body>
-<!-- Header -->
-<div class="header">
-<a href="#home" class="logo">THE HATE U GIVE</a>
-<div class="header-right">
-<a class="active" href="#home">Home</a>
-<a href="#characters">Characters</a>
-<a href="#gallery">Gallery</a>
-<a href="#timeline">Timeline</a>
-<a href="#analysis">Analysis</a>
-<a href="#contact">Contact</a>
-</div>
-</div>
+  <!-- Header -->
+  <header class="header">
+    <a href="#home" class="logo">THUG Project</a>
+    <nav class="header-right">
+      <a class="active" href="#home">Home</a>
+      <a href="#characters">Characters</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#analysis">Analysis</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <section id="home" class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1520901153381-46b33e0d9fbb?auto=format&fit=crop&w=1950&q=80');">
+    <div class="hero-text">
+      <h1>Starr’s Story</h1>
+      <p>Identity, Resilience, and Activism</p>
+      <button onclick="document.getElementById('analysis').scrollIntoView({behavior:'smooth'})">Learn More</button>
+    </div>
+  </section>
 
+  <!-- Characters Section -->
+  <section id="characters">
+    <h2>Main Characters</h2>
+    <div class="grid-container">
+      <div class="character-card" onclick="openPopup('starrPopup')">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Starr Carter">
+        <h3>Starr Carter</h3>
+        <p>Click for more info</p>
+      </div>
+      <div class="character-card" onclick="openPopup('khalilPopup')">
+        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=400&q=80" alt="Khalil">
+        <h3>Khalil</h3>
+        <p>Click for more info</p>
+      </div>
+      <div class="character-card" onclick="openPopup('maverickPopup')">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Maverick Carter">
+        <h3>Maverick Carter</h3>
+        <p>Click for more info</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Character Popups -->
+  <div id="starrPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('starrPopup')">&times;</span>
+      <h2>Starr Carter</h2>
+      <p>Starr Carter is a 16-year-old Black teenager navigating identity, trauma, and activism. Her story explores adolescent growth under societal pressure and moral courage...</p>
+    </div>
+  </div>
 
-<!-- HERO SECTION -->
-<div class="hero" id="home">
-<img src="img/THUG.webp" alt="The Hate U Give Cover Background">
-<div class="hero-text">
-<h1>STARR’S STORY</h1>
-<p>Identity • Resilience • Activism</p>
-<button onclick="document.getElementById('analysis').scrollIntoView({behavior:'smooth'})">Learn More</button>
-</div>
-</div>
+  <div id="khalilPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('khalilPopup')">&times;</span>
+      <h2>Khalil</h2>
+      <p>Khalil, Starr’s childhood friend, tragically dies, sparking her activism. His story highlights systemic oppression and racialized violence in America...</p>
+    </div>
+  </div>
 
+  <div id="maverickPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('maverickPopup')">&times;</span>
+      <h2>Maverick Carter</h2>
+      <p>Maverick Carter, Starr’s father, provides moral guidance and demonstrates courage, integrity, and resilience as she navigates racial inequities...</p>
+    </div>
+  </div>
 
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Visual Gallery</h2>
+    <div class="grid-container">
+      <div><img src="https://images.unsplash.com/photo-1581092795364-65c6c0e82a0f?auto=format&fit=crop&w=400&q=80" alt="Protest scene"></div>
+      <div><img src="https://images.unsplash.com/photo-1508873696983-2dfd5898f2ce?auto=format&fit=crop&w=400&q=80" alt="Neighborhood"></div>
+      <div><img src="https://images.unsplash.com/photo-1600880292089-90b6e17c99e5?auto=format&fit=crop&w=400&q=80" alt="Family scene"></div>
+    </div>
+  </section>
 
+  <!-- Timeline Section -->
+  <section id="timeline">
+    <h2>Starr’s Personal Growth Timeline</h2>
+    <ul class="timeline">
+      <li onclick="openPopup('incitingEvent')"><strong>Inciting Event:</strong> Witnesses Khalil’s death</li>
+      <li onclick="openPopup('conflictEvent')"><strong>Conflict:</strong> Faces media scrutiny and community tension</li>
+      <li onclick="openPopup('reflectionEvent')"><strong>Self-Reflection:</strong> Questions identity and role in activism</li>
+      <li onclick="openPopup('actionEvent')"><strong>Action:</strong> Organizes for justice and speaks out publicly</li>
+      <li onclick="openPopup('resolutionEvent')"><strong>Resolution:</strong> Embraces her voice and role in the community</li>
+    </ul>
+  </section>
 
-<!-- CHARACTERS SECTION -->
-<section id="characters">
-<h2>Main Characters</h2>
-<div class="grid-container">
-<div class="character-card" onclick="openPopup('starrPopup')">
-<img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=500&q=80" alt="Starr Carter">
-<h3>Starr Carter</h3>
-</div>
-<div class="character-card" onclick="openPopup('khalilPopup')">
-<img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=500&q=80" alt="Khalil">
-<h3>Khalil</h3>
-</div>
-<div class="character-card" onclick="openPopup('maverickPopup')">
-<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=80" alt="Maverick Carter">
-<h3>Maverick Carter</h3>
-</div>
-</div>
-</section>
+  <!-- Timeline Popups -->
+  <div id="incitingEvent" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('incitingEvent')">&times;</span>
+      <h2>Inciting Event</h2>
+      <p>Starr witnesses Khalil’s death, igniting her journey toward activism and self-expression.</p>
+    </div>
+  </div>
+  <div id="conflictEvent" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('conflictEvent')">&times;</span>
+      <h2>Conflict</h2>
+      <p>Starr faces media scrutiny, community pressure, and the challenges of balancing her two worlds while processing grief.</p>
+    </div>
+  </div>
+  <div id="reflectionEvent" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('reflectionEvent')">&times;</span>
+      <h2>Self-Reflection</h2>
+      <p>Starr reflects on her identity and role, questioning how she can best contribute to justice and resilience.</p>
+    </div>
+  </div>
+  <div id="actionEvent" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('actionEvent')">&times;</span>
+      <h2>Action</h2>
+      <p>Starr organizes for justice, speaks out publicly, and channels her trauma into activism, demonstrating growth and courage.</p>
+    </div>
+  </div>
+  <div id="resolutionEvent" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('resolutionEvent')">&times;</span>
+      <h2>Resolution</h2>
+      <p>Starr fully embraces her voice, identity, and role in the community, showing resilience and hope for the future.</p>
+    </div>
+  </div>
 
+  <!-- Analysis Section -->
+  <section id="analysis">
+    <h2>Critical Lens Analysis</h2>
+    <p>This website applies a <strong>Critical Race + Adolescent Experience lens</strong> to examine Starr’s journey. We see how systemic inequities and racialized violence shape her development while highlighting the importance of resilience, family, and community. Her growth illustrates how young people confront trauma and transform it into activism.</p>
+    <p>The Adolescent Experience approach shows how Starr navigates the pressures of multiple identities—at school, at home, and in her neighborhood. Each choice reflects both the challenges of adolescence and the moral courage that emerges when confronted with injustice.</p>
+    <p>By combining Hope & Resilience with Critical Race Theory, the website emphasizes that even in the face of systemic oppression, young people can find agency and voice. The interactive design, imagery, and layout visually represent Starr’s journey and the broader social themes in the novel.</p>
+  </section>
 
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="thankyou.html" class="contact-form">
+      <label>Email</label>
+      <input type="email" placeholder="Enter Email" required>
+      <label>Message</label>
+      <textarea placeholder="Write your message here..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
+  <script src="js/main.js"></script>
+  <script>
+    // Open popup
+    function openPopup(id) {
+      document.getElementById(id).style.display = 'block';
+    }
 
-<!-- POPUPS WITH FULL CHARACTER ANALYSIS -->
-<div id="starrPopup" class="popup">
-<div class="popup-content">
-<span class="close" onclick="closePopup('starrPopup')">&times;</span>
-<h2>Starr Carter</h2>
-<p>Starr Carter is a 16-year-old navigating the challenges of living between two worlds: the predominantly Black neighborhood of Garden Heights and the wealthy, mostly white private school she attends. This duality creates internal conflict as she works to maintain separate identities depending on her environment. Starr’s struggle with code-switching reflects larger themes of belonging, identity formation, and social pressure placed on Black adolescents growing up in racially stratified systems.</p>
-<p>Witnessing Khalil’s death at the hands of law enforcement becomes a defining trauma that forces Starr into the center of a national conversation she never asked to be part of. Her grief, fear, and confusion highlight the psychological toll placed on young people who experience racialized violence firsthand. Yet through this trauma, Starr begins to understand the power of her voice and the responsibility that comes with being a witness.</p>
-<p>Throughout the novel, Starr gradually finds strength through family, community, and self-reflection. Her father Maverick teaches her the value of standing firm in truth, while her mother emphasizes safety and emotional grounding. This balance of guidance helps Starr navigate difficult choices and define her own sense of justice and courage.</p>
-<p>By the end of her journey, Starr transforms from someone afraid to speak out into a young activist who channels her pain into organized resistance. Her development embodies hope and resilience—two core themes of the novel—and illustrates how adolescents can emerge from trauma with a stronger understanding of themselves and their role in the world.</p>
-</div>
-</div>
+    // Close popup
+    function closePopup(id) {
+      document.getElementById(id).style.display = 'none';
+    }
 
+    // Smooth scroll for header links
+    document.querySelectorAll('.header a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
 
-
-
-<div id="khalilPopup" class="popup">
-<div class="popup-content">
-<span class="close" onclick="closePopup('khalilPopup')">&times;</span>
-<h2>Khalil</h2>
-<p>Khalil represents the countless young Black lives affected by systemic injustice. Although his death is a central plot catalyst, Angie Thomas ensures Khalil is more than a symbol—he is a fully realized character with dreams, vulnerabilities, and humanity. Through Starr’s memories, we see a boy who cared for his family, protected his friends, and tried to navigate limited opportunities in a world stacked against him.</p>
-<p>Before his death, Khalil faced immense pressure to provide for his family, highlighting the socioeconomic challenges faced by many Black youth. His involvement in drug dealing is portrayed not as a moral failing, but as a survival strategy within a system offering few alternatives. This nuance pushes readers to confront the ways poverty, policing, and racial bias create cycles of vulnerability.</p>
-<p>After his death, Khalil becomes the subject of media distortion, with news outlets framing him as a threat rather than a victim. This deliberate narrative manipulation reflects real-world patterns in which Black victims are criminalized to justify state violence. Through Starr’s insistence on telling the truth about who Khalil really was, the novel exposes the power of storytelling in reclaiming stolen dignity.</p>
-<p>Ultimately, Khalil’s character serves as a reminder that behind every headline is a life interrupted, a community grieving, and a society in need of change. His memory propels Starr’s transformation and anchors the novel’s call for justice, humanity, and systemic reform.</p>
-</div>
-</div>
-
-
-
-
-<div id="maverickPopup" class="popup">
-<div class="
+</html>
