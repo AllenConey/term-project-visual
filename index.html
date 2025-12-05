@@ -1,157 +1,104 @@
-import React, { useState } from "react";
-))}
-</div>
-</section>
+<!doctype html>
+<html class="no-js" lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <title>The Hate U Give Project</title>
+  <meta name="description" content="Interactive visual project for The Hate U Give by Angie Thomas">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{/* Rationale Preview / Download */}
-<section id="rationale" className="mt-12">
-<h3>Rationale (Preview)</h3>
-<p className="mb-4">This project’s written rationale is a 1,200-word analysis tying visual decisions to five direct quotations and two academic sources. Click the button to preview a short excerpt here or to download the full rationale as a PDF when available.</p>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 
+  <meta name="theme-color" content="#fafafa">
+</head>
 
-<div className="flex gap-4">
-<button onClick={() => setShowRationale(true)} className="bg-indigo-700 text-white px-4 py-2 rounded shadow">Open Rationale Excerpt</button>
-<a href="/files/rationale-full.pdf" className="bg-white border border-indigo-700 text-indigo-700 px-4 py-2 rounded shadow">Download (placeholder)</a>
-</div>
-</section>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <a href="#home" class="logo">THUG Project</a>
+    <div class="header-right">
+      <a class="active" href="#home">Home</a>
+      <a href="#characters">Characters</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#analysis">Analysis</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
 
+  <!-- Hero Section -->
+  <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1950&q=80');">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Starr’s Story</h1>
+      <p>Identity, Resilience, and Activism</p>
+      <button onclick="window.location='#analysis'">Learn More</button>
+    </div>
+  </div>
 
-{/* Artist's Notes */}
-<section id="notes" className="mt-12">
-<h3>Artist's Notes</h3>
-<p>I used portraiture and typographic posters to translate moments of silence into visual language. Color palettes emphasize contrast: saturated indigo and warm neutrals tie together public vs. private worlds. I staged photos with community members to honor collective memory and to avoid exploitative imagery.</p>
-</section>
+  <!-- Characters Section -->
+  <section id="characters">
+    <h2>Main Characters</h2>
+    <div class="grid-container">
+      <div>
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Starr Carter">
+        <h3>Starr Carter</h3>
+        <p>Protagonist navigating identity, trauma, and activism.</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=400&q=80" alt="Khalil">
+        <h3>Khalil</h3>
+        <p>Starr's childhood friend whose death sparks her activism.</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Maverick">
+        <h3>Maverick Carter</h3>
+        <p>Starr’s father, teaches resilience and standing up for justice.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Visual Gallery</h2>
+    <div class="grid-container">
+      <div><img src="https://images.unsplash.com/photo-1601597111967-bbf80cf9b7c7?auto=format&fit=crop&w=400&q=80" alt="Protest scene"></div>
+      <div><img src="https://images.unsplash.com/photo-1557682250-7a07e1f9a1b2?auto=format&fit=crop&w=400&q=80" alt="Neighborhood"></div>
+      <div><img src="https://images.unsplash.com/photo-1601758123927-7f6fc4843103?auto=format&fit=crop&w=400&q=80" alt="Family scene"></div>
+    </div>
+  </section>
 
-{/* Footer / Contact */}
-<footer className="mt-16 border-t pt-8 pb-12">
-<div className="flex flex-col md:flex-row md:justify-between items-start gap-6">
-<div>
-<h5 className="font-semibold">Project</h5>
-<p className="text-sm opacity-80">Interactive website for English 3223 — Visual project based on <em>The Hate U Give</em>.</p>
-</div>
+  <!-- Timeline Section -->
+  <section id="timeline">
+    <h2>Starr’s Personal Growth Timeline</h2>
+    <ul>
+      <li><strong>Inciting Event:</strong> Witnesses Khalil’s death</li>
+      <li><strong>Conflict:</strong> Navigates media, community pressure</li>
+      <li><strong>Resolution:</strong> Finds her voice, embraces activism</li>
+    </ul>
+  </section>
 
+  <!-- Analysis Section -->
+  <section id="analysis">
+    <h2>Critical Lens Analysis</h2>
+    <p>This project explores Starr’s adolescent experience and resilience through a Critical Race lens. It highlights how trauma, identity, and systemic inequities shape her growth and activism. The website uses original photography and design to visualize her journey and key themes of hope, justice, and community support.</p>
+  </section>
 
-<div>
-<h5 className="font-semibold">Contact</h5>
-<p className="text-sm opacity-80">Allen Duane Coney — ADC Media — <a href="mailto:you@example.com" className="underline">you@example.com</a></p>
-</div>
-</div>
-</footer>
-</main>
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="thankyou.html" style="border:1px solid #ccc; padding:20px;">
+      <div class="container">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <label for="message"><b>Message</b></label>
+        <textarea placeholder="Write your message here..." name="message" required></textarea>
+        <button type="submit" class="signupbtn">Send Message</button>
+      </div>
+    </form>
+  </section>
 
-
-{/* Rationale Modal */}
-{showRationale && (
-<div className="fixed inset-0 z-50 bg-black/60 flex items-start justify-center p-6" onClick={() => setShowRationale(false)}>
-<div className="bg-white max-w-3xl w-full rounded-lg shadow-lg overflow-auto" onClick={(e) => e.stopPropagation()}>
-<div className="p-6">
-<div className="flex justify-between items-center">
-<h4 className="text-xl font-bold">Rationale — Excerpt</h4>
-<button className="text-sm text-indigo-600" onClick={() => setShowRationale(false)}>Close</button>
-</div>
-
-
-<div className="mt-4 prose">
-<p>This rationale unpacks the choices made for a visual translation of Angie Thomas’s novel. It argues that photography, typographic posters, and an interactive timeline together make visible the tensions of code-switching, public visibility, and communal resilience experienced by the protagonist. The final written rationale will include at least five direct quotations from the novel—anchoring images to lines that inspired composition—and at least two scholarly sources that situate the text within critical race theory and YA coming-of-age studies.</p>
-
-
-<p>Visually, the website foregrounds Starr’s voice by placing typographic work alongside portraiture. The timeline pairs emotional moments with photographs to show how resilience grows through action and community. The written component will interlink these choices with textual analysis to meet the project’s rubric.</p>
-
-
-<p><strong>Planned quotes (examples to include):</strong> direct lines from the novel that emphasize voice, fear, and hope. (These will be cited in the final 1,200-word rationale.)</p>
-
-
-<div className="mt-6">
-<a href="/files/rationale-full.pdf" className="inline-block bg-indigo-700 text-white px-4 py-2 rounded">Download Full Rationale (placeholder)</a>
-</div>
-</div>
-
-
-</div>
-</div>
-</div>
-)}
-</div>
-);
-}
- 
-  
-
-
-
-  
-
-
-  
-    
-  
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-
+  <script src="js/main.js"></script>
 </body>
-
-
-
-
-
 
 </html>
