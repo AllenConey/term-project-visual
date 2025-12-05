@@ -1,80 +1,211 @@
 <!doctype html>
-<div id="khalilPopup" class="popup"><div class="popup-content"><span class="close" onclick="closePopup('khalilPopup')">&times;</span><h2>Khalil</h2>
-<p>Khalil Harris, though present for only a portion of the novel, represents a central emotional and political anchor in Starr’s narrative. His character is intentionally multifaceted—Thomas gives us glimpses of Khalil as a loyal friend, a protective figure, and a young man carrying the weight of systemic oppression. His death is not simply a plot device; it serves as a powerful critique of how society reduces Black youth to stereotypes, often ignoring the humanity, dreams, and complexity of their lived experiences.</p>
-<p>Through Starr’s memories, we learn about Khalil’s struggles and choices, many of which stem from economic hardship and lack of opportunities. Thomas shows how systemic pressures—poverty, limited mobility, and the influence of neighborhood power structures—shape the decisions young people make. Khalil becomes a symbol of how marginalized youth are failed by institutions that are supposed to protect and uplift them. This aligns with the Critical Race Theory lens by revealing the racialized patterns that govern policing, poverty, and public perception.</p>
-<p>Khalil’s death also becomes the catalyst for Starr’s internal transformation. His absence forces her to confront her own fears and question the systems that allow such injustices to occur repeatedly. In this sense, Khalil’s character remains fully present throughout the novel, shaping Starr’s actions, her understanding of justice, and her sense of responsibility to speak the truth others want erased.</p>
-<p>Thematically, Khalil embodies the tragedy of lost potential but also the spark of collective uprising. The protests, media coverage, and community reactions following his death highlight the complexity of public grief in marginalized communities. Through Khalil, Thomas forces readers to confront how society values—or devalues—Black youth and challenges the audience to rethink narratives around victimhood, innocence, and justice.</p>
-</div></div>
+<html lang="en">
 
 
-<div id="maverickPopup" class="popup"><div class="popup-content"><span class="close" onclick="closePopup('maverickPopup')">&times;</span><h2>Maverick Carter</h2>
-<p>Maverick Carter stands as one of the most influential forces in Starr’s life and serves as a model of Black fatherhood rarely portrayed in mainstream media. A former gang member who rebuilt his life through discipline, loyalty, and a deep dedication to his family, Maverick represents the possibility of change even within environments shaped by structural inequality. His character highlights the complexities of masculinity, responsibility, and redemption in communities affected by poverty and surveillance.</p>
-<p>Throughout the novel, Maverick acts as Starr’s moral compass. He teaches her the importance of speaking truth and standing firm in her identity—even when the world attempts to diminish or distort it. His lessons on Black pride, safety, and communal responsibility are central to Starr’s development. These moments reflect the intergenerational transmission of resilience in Black families, emphasizing the power of cultural knowledge as a tool of survival and empowerment.</p>
-<p>Maverick’s past also reveals the systemic forces that shape the lives of young Black men. His earlier involvement with the King Lords was not born from desire but necessity. By depicting his transition from gang life to devoted fatherhood and business owner, Thomas critiques the limited pathways available to Black youth while also highlighting the strength it takes to escape cycles of violence and incarceration.</p>
-<p>In Starr’s journey, Maverick represents stability, wisdom, and love. His role underscores the YA theme of community as a foundation for hope. Maverick’s unwavering support empowers Starr to speak out publicly and embrace her voice. His character ultimately embodies resilience—showing how personal transformation can spark change within families and entire communities.</p>
-</div></div>
+<head>
+ <meta charset="utf-8">
+ <title>The Hate U Give Project</title>
+ <meta name="description" content="Interactive visual project for The Hate U Give by Angie Thomas">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<!-- Gallery -->
-<section id="gallery">
-<h2>Visual Gallery</h2>
-<div class="grid-container">
-<div><img src="img/nopeace.avif"></div>
-<div><img src="img/blacklive.jpg"></div>
-<div><img src="img/police.jpg"></div>
-</div>
-</section>
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/main.css">
+</head>
 
 
-<!-- Timeline -->
-<section id="timeline">
-<h2>Starr’s Personal Growth Timeline</h2>
-<ul class="timeline">
-<li onclick="openPopup('incitingEvent')"><strong>Inciting Event:</strong> Witnesses Khalil’s death</li>
-<li onclick="openPopup('conflictEvent')"><strong>Conflict:</strong> Faces media scrutiny</li>
-<li onclick="openPopup('reflectionEvent')"><strong>Self-Reflection:</strong> Questions identity</li>
-<li onclick="openPopup('actionEvent')"><strong>Action:</strong> Speaks out publicly</li>
-<li onclick="openPopup('resolutionEvent')"><strong>Resolution:</strong> Embraces her voice</li>
-</ul>
-</section>
+<body>
+ <!-- Header -->
+ <div class="header">
+   <a href="#home" class="logo">THE HATE YOU GIVE</a>
+   <div class="header-right">
+     <a class="active" href="#home">Home</a>
+     <a href="#characters">Characters</a>
+     <a href="#gallery">Gallery</a>
+     <a href="#timeline">Timeline</a>
+     <a href="#analysis">Analysis</a>
+     <a href="#contact">Contact</a>
+   </div>
+ </div>
 
 
-<!-- Timeline Popups -->
-<div id="incitingEvent" class="popup"><div class="popup-content"><span class="close" onclick="closePopup('incitingEvent')">&times;</span><h2>Inciting Event</h2>
-<p>Starr witnesses Khalil’s death, a traumatic moment that forces her to confront the violent realities of racialized policing...</p></div></div>
+ <!-- Hero Section -->
+ <div> <img src="img/THUG.webp"></div>
+   <div class="hero-text">
+     <h1>Starr’s Story</h1>
+     <p>Identity, Resilience, and Activism</p>
+     <button onclick="document.getElementById('analysis').scrollIntoView({behavior:'smooth'})">Learn More</button>
+   </div>
+ </div>
 
 
-<div id="conflictEvent" class="popup"><div class="popup-content"><span class="close" onclick="closePopup('conflictEvent')">&times;</span><h2>Conflict</h2>
-<p>Following Khalil’s death, Starr faces pressure from the police, the media, and her own community...</p></div></div>
+ <!-- Characters Section -->
+ <section id="characters">
+   <h2>Main Characters</h2>
+   <div class="grid-container">
+     <div class="character-card" onclick="openPopup('starrPopup')">
+       <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Starr Carter">
+       <h3>Starr Carter</h3>
+       <p>Click for more info</p>
+     </div>
+     <div class="character-card" onclick="openPopup('khalilPopup')">
+       <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=400&q=80" alt="Khalil">
+       <h3>Khalil</h3>
+       <p>Click for more info</p>
+     </div>
+     <div class="character-card" onclick="openPopup('maverickPopup')">
+       <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Maverick Carter">
+       <h3>Maverick Carter</h3>
+       <p>Click for more info</p>
+     </div>
+   </div>
+ </section>
 
 
-<div id="reflectionEvent" class="popup"><div class="popup-content"><span class="close" onclick="closePopup('reflectionEvent')">&times;</span><h2>Self-Reflection</h2>
-<p>Starr reevaluates how she navigates her two identities, confronts her fear of speaking out...</p></div></div>
+ <!-- Character Popups -->
+ <div id="starrPopup" class="popup">
+   <div class="popup-content">
+     <span class="close" onclick="closePopup('starrPopup')">&times;</span>
+     <h2>Starr Carter</h2>
+     <p>Starr is a 16-year-old Black teenager navigating identity, trauma, and activism. She learns to find her voice and stand up against systemic injustice in her community. Her story reflects adolescent growth under pressure and moral courage.</p>
+   </div>
+ </div>
 
 
-<div id="actionEvent" class="popup"><div class="popup-content"><span class="close" onclick="closePopup('actionEvent')">&times;</span><h2>Action</h2>
-<p>Starr publicly speaks Khalil’s name, joins protests, and embraces her role as an activist...</p></div></div>
+ <div id="khalilPopup" class="popup">
+   <div class="popup-content">
+     <span class="close" onclick="closePopup('khalilPopup')">&times;</span>
+     <h2>Khalil</h2>
+     <p>Khalil is Starr’s childhood friend whose tragic death sparks her activism. His story highlights systemic oppression and racialized violence in America, inspiring Starr’s journey toward justice and resilience.</p>
+   </div>
+ </div>
 
 
-<div id="resolutionEvent" class="popup"><div class="popup-content"><span class="close" onclick="closePopup('resolutionEvent')">&times;</span><h2>Resolution</h2>
-<p>Starr ultimately finds peace in her identity and commits to ongoingjustice and community healing...</p></div></div>
+ <div id="maverickPopup" class="popup">
+   <div class="popup-content">
+     <span class="close" onclick="closePopup('maverickPopup')">&times;</span>
+     <h2>Maverick Carter</h2>
+     <p>Starr’s father, Maverick, teaches courage, integrity, and resilience, providing moral guidance as Starr navigates a society shaped by racial inequities. His mentorship is central to Starr’s growth.</p>
+   </div>
+ </div>
 
 
-<!-- Analysis -->
-<section id="analysis">
-<h2>Critical Lens Analysis</h2>
-<p>This website applies a <strong>Critical Race + Adolescent Experience lens</strong> to examine Starr’s journey. We see how systemic inequities and racialized violence shape her development while highlighting the importance of resilience, family, and community. Her growth illustrates how young people confront trauma and transform it into activism.</p>
-<p>The Adolescent Experience approach shows how Starr navigates the pressures of multiple identities—at school, at home, and in her neighborhood. Each choice reflects both the challenges of adolescence and the moral courage that emerges when confronted with injustice.</p>
-<p>By combining Hope & Resilience with Critical Race Theory, the website emphasizes that even in the face of systemic oppression, young people can find agency and voice. The interactive design, imagery, and layout visually represent Starr’s journey and the broader social themes in the novel.</p>
-</section>
+ <!-- Gallery Section -->
+ <section id="gallery">
+   <h2>Visual Gallery</h2>
+   <div class="grid-container">
+     <div> <img src="img/nopeace.avif"></div>
+     <div><img src="img/blacklive.jpg"></div>
+     <div><img src="img/police.jpg"></div>
+   </div>
+ </section>
 
 
-<!-- Contact -->
-<section id="contact">
-<h2>Contact</h2>
-<form action="thankyou.html" class="contact-form">
-<label>Email</label>
-<input type="email" required>
-<label>Message</label>
-<textarea required></textarea>
-<button type="submit">Send</
+ <!-- Timeline Section -->
+ <section id="timeline">
+   <h2>Starr’s Personal Growth Timeline</h2>
+   <ul class="timeline">
+     <li onclick="openPopup('incitingEvent')"><strong>Inciting Event:</strong> Witnesses Khalil’s death</li>
+     <li onclick="openPopup('conflictEvent')"><strong>Conflict:</strong> Faces media scrutiny and community tension</li>
+     <li onclick="openPopup('reflectionEvent')"><strong>Self-Reflection:</strong> Questions identity and role in activism</li>
+     <li onclick="openPopup('actionEvent')"><strong>Action:</strong> Organizes for justice and speaks out publicly</li>
+     <li onclick="openPopup('resolutionEvent')"><strong>Resolution:</strong> Embraces her voice and role in the community</li>
+   </ul>
+ </section>
+
+
+ <!-- Timeline Popups -->
+ <div id="incitingEvent" class="popup">
+   <div class="popup-content">
+     <span class="close" onclick="closePopup('incitingEvent')">&times;</span>
+     <h2>Inciting Event</h2>
+     <p>Starr witnesses the death of her friend Khalil, which ignites her journey toward activism and self-expression.</p>
+   </div>
+ </div>
+
+
+ <div id="conflictEvent" class="popup">
+   <div class="popup-content">
+     <span class="close" onclick="closePopup('conflictEvent')">&times;</span>
+     <h2>Conflict</h2>
+     <p>Starr faces media scrutiny, community pressure, and the challenges of balancing her two worlds while processing grief.</p>
+   </div>
+ </div>
+
+
+ <div id="reflectionEvent" class="popup">
+   <div class="popup-content">
+     <span class="close" onclick="closePopup('reflectionEvent')">&times;</span>
+     <h2>Self-Reflection</h2>
+     <p>Starr reflects on her identity and role, questioning how she can best contribute to justice and resilience.</p>
+   </div>
+ </div>
+
+
+ <div id="actionEvent" class="popup">
+   <div class="popup-content">
+     <span class="close" onclick="closePopup('actionEvent')">&times;</span>
+     <h2>Action</h2>
+     <p>Starr organizes for justice, speaks out publicly, and channels her trauma into activism, demonstrating growth and courage.</p>
+   </div>
+ </div>
+
+
+ <div id="resolutionEvent" class="popup">
+   <div class="popup-content">
+     <span class="close" onclick="closePopup('resolutionEvent')">&times;</span>
+     <h2>Resolution</h2>
+     <p>Starr fully embraces her voice, identity, and role in the community, showing resilience and hope for the future.</p>
+   </div>
+ </div>
+
+
+ <!-- Analysis Section -->
+ <section id="analysis">
+   <h2>Critical Lens Analysis</h2>
+   <p>This website applies a <strong>Critical Race + Adolescent Experience lens</strong> to examine Starr’s journey. We see how systemic inequities and racialized violence shape her development while highlighting the importance of resilience, family, and community. Her growth illustrates how young people confront trauma and transform it into activism.</p>
+   <p>The Adolescent Experience approach shows how Starr navigates the pressures of multiple identities—at school, at home, and in her neighborhood. Each choice reflects both the challenges of adolescence and the moral courage that emerges when confronted with injustice.</p>
+   <p>By combining Hope & Resilience with Critical Race Theory, the website emphasizes that even in the face of systemic oppression, young people can find agency and voice. The interactive design, imagery, and layout visually represent Starr’s journey and the broader social themes in the novel.</p>
+ </section>
+
+
+ <!-- Contact Form -->
+ <section id="contact">
+   <h2>Contact</h2>
+   <form action="thankyou.html" style="border:1px solid #ccc; padding:20px;">
+     <div class="container">
+       <label for="email"><b>Email</b></label>
+       <input type="text" placeholder="Enter Email" name="email" required>
+       <label for="message"><b>Message</b></label>
+       <textarea placeholder="Write your message here..." name="message" required></textarea>
+       <button type="submit" class="signupbtn">Send Message</button>
+     </div>
+   </form>
+ </section>
+
+
+ <script src="js/main.js"></script>
+ <script>
+   // Open popup
+   function openPopup(id) {
+     document.getElementById(id).style.display = 'block';
+   }
+   // Close popup
+   function closePopup(id) {
+     document.getElementById(id).style.display = 'none';
+   }
+
+
+   // Smooth scroll for header links
+   document.querySelectorAll('.header a').forEach(link => {
+     link.addEventListener('click', function(e) {
+       e.preventDefault();
+       const targetId = this.getAttribute('href').substring(1);
+       document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+     });
+   });
+ </script>
+</body>
+
+
+</html>
