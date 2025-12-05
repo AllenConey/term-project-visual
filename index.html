@@ -24,13 +24,13 @@
   </div>
 
   <!-- Hero Section -->
-  <div>
-    <img src="img/THUG.webp">
-  </div>
-  <div class="hero-text">
-    <h1>Starr’s Story</h1>
-    <p>Identity, Resilience, and Activism</p>
-    <button onclick="document.getElementById('analysis').scrollIntoView({behavior:'smooth'})">Learn More</button>
+  <div class="hero" id="home">
+    <img src="img/THUG.webp" alt="The Hate U Give Cover Background">
+    <div class="hero-text">
+      <h1>Starr’s Story</h1>
+      <p>Identity, Resilience, and Activism</p>
+      <button onclick="document.getElementById('analysis').scrollIntoView({behavior:'smooth'})">Learn More</button>
+    </div>
   </div>
 
   <!-- Characters Section -->
@@ -38,17 +38,17 @@
     <h2>Main Characters</h2>
     <div class="grid-container">
       <div class="character-card" onclick="openPopup('starrPopup')">
-        <img src="img/starr.jpg">
+        <img src="img/starr.jpg" alt="Starr Carter">
         <h3>Starr Carter</h3>
         <p>Click for more info</p>
       </div>
       <div class="character-card" onclick="openPopup('khalilPopup')">
-        <img src="img/kh.webp">
+        <img src="img/kh.webp" alt="Khalil">
         <h3>Khalil</h3>
         <p>Click for more info</p>
       </div>
       <div class="character-card" onclick="openPopup('maverickPopup')">
-        <img src="img/mav2.avif">
+        <img src="img/mav2.avif" alt="Maverick Carter">
         <h3>Maverick Carter</h3>
         <p>Click for more info</p>
       </div>
@@ -60,21 +60,23 @@
     <div class="popup-content">
       <span class="close" onclick="closePopup('starrPopup')">&times;</span>
       <h2>Starr Carter</h2>
-      <p>Starr Carter is a sixteen-year-old Black teenager who lives at the intersection of two very different worlds, her predominantly Black neighborhood of Garden Heights and the affluent, mostly white private school she attends. This duality forces her to navigate complex issues of identity, code-switching, and belonging as she learns to balance her home life with her experiences outside the community she calls home. Starr faces the challenges of adolescence while carrying the weight of racialized violence and systemic injustice, which becomes even more personal after witnessing the tragic death of her childhood friend Khalil. Through this trauma, Starr gradually learns to find her voice and use it to speak out against injustice, both for herself and for her community. Her journey highlights resilience, moral courage, and the process of coming of age under extraordinary circumstances, showing how a young person can transform grief and fear into activism, advocacy, and a deeper understanding of her own identity and power in a society shaped by inequality.</p>
+      <p>Starr Carter is a sixteen-year-old Black teenager who navigates two very different worlds: the predominantly Black neighborhood of Garden Heights where she lives and the affluent, mostly white private school she attends. Balancing these environments forces Starr to confront questions of identity, belonging, and code-switching. Her world is further complicated by the racialized violence she witnesses, particularly the tragic death of her childhood friend Khalil, which becomes a defining moment in her life. Through this trauma, Starr begins to find her voice, understanding the power and responsibility that comes with speaking out. Guided by her family and community, she learns resilience, moral courage, and advocacy, gradually transforming grief and fear into activism. Her journey highlights the emotional, social, and psychological challenges adolescents face while showing how strength, courage, and community can empower young people to confront injustice and assert their agency in society.</p>
+    </div>
   </div>
 
   <div id="khalilPopup" class="popup">
     <div class="popup-content">
       <span class="close" onclick="closePopup('khalilPopup')">&times;</span>
       <h2>Khalil</h2>
-      <p>Khalil is Starr Carter’s childhood friend whose life and untimely death serve as the catalyst for the story’s exploration of systemic injustice and racialized violence. Though his death is a central event, Khalil is portrayed as a fully realized character with dreams, emotions, and a deep connection to his family and friends. His involvement in difficult circumstances, including navigating limited opportunities and socioeconomic pressure, illustrates the structural inequalities faced by many young Black men. Through Starr’s memories, readers see a young man who was loyal, protective, and deeply human, whose life is abruptly ended by forces beyond his control. The aftermath of his death exposes the ways in which the media and society distort the narratives of Black victims, attempting to criminalize rather than mourn them. Khalil’s story drives Starr’s awakening to the realities of systemic oppression, and his memory fuels her determination to advocate for justice, resilience, and societal change, leaving an enduring impact on those who knew him and on the readers who witness his story.</p>
+      <p>Khalil is Starr Carter’s childhood friend whose life and untimely death become the catalyst for the story’s exploration of systemic oppression and racialized violence. Though his death drives the plot, Khalil is portrayed as a complex individual with dreams, relationships, and challenges. He faces socioeconomic pressures and limited opportunities, highlighting the structural inequities affecting many young Black men. His involvement in dangerous situations is a reflection of survival rather than moral failure, illustrating the societal conditions that restrict options for marginalized youth. Through Starr’s memories, Khalil is remembered as loyal, protective, and human, with ambitions and emotions that make his death all the more tragic. The aftermath of his death exposes societal and media attempts to distort his story, criminalizing victims rather than acknowledging their humanity. Khalil’s memory fuels Starr’s activism and resilience, demonstrating the importance of storytelling in reclaiming dignity and inspiring social change.</p>
+    </div>
   </div>
 
   <div id="maverickPopup" class="popup">
     <div class="popup-content">
       <span class="close" onclick="closePopup('maverickPopup')">&times;</span>
       <h2>Maverick Carter</h2>
-      <p>Maverick Carter, Starr’s father, serves as a pillar of strength, guidance, and moral clarity throughout the novel. As a parent and community member, he teaches Starr the importance of courage, integrity, and standing up for what is right, even when facing adversity or danger. Maverick’s experiences with systemic oppression, past mistakes, and life in a racially stratified society provide him with a perspective that he uses to guide his children, helping Starr understand the importance of self-respect, resilience, and community responsibility. He emphasizes the need to maintain moral principles while navigating a world that often challenges and undermines Black lives. His mentorship is central to Starr’s personal growth, shaping her understanding of justice, leadership, and advocacy. Maverick’s character embodies the strength of family and community, showing that guidance, love, and ethical grounding are essential for young people to face societal pressures, find their voice, and transform personal and collective challenges into opportunities for meaningful action and change.</p>
+      <p>Maverick Carter, Starr’s father, is a pillar of guidance, courage, and moral integrity. His experiences navigating systemic oppression and living in a racially stratified society inform the values he imparts to Starr. Maverick emphasizes resilience, self-respect, and responsibility, teaching her to stand up for what is right even in the face of adversity. He serves as both a mentor and protector, guiding Starr through moral and practical challenges while supporting her personal growth. His mentorship is central to Starr’s development, illustrating how family and community shape the capacity of young people to face societal pressures, transform challenges into action, and assert their voice. Maverick embodies the strength of guidance, love, and ethical grounding in fostering agency, advocacy, and leadership in the next generation.</p>
     </div>
   </div>
 
@@ -82,9 +84,9 @@
   <section id="gallery">
     <h2>Visual Gallery</h2>
     <div class="grid-container">
-      <div><img src="img/nopeace.avif"></div>
-      <div><img src="img/blacklive.jpg"></div>
-      <div><img src="img/police.jpg"></div>
+      <div><img src="img/nopeace.avif" alt="Visual 1"></div>
+      <div><img src="img/blacklive.jpg" alt="Visual 2"></div>
+      <div><img src="img/police.jpg" alt="Visual 3"></div>
     </div>
   </section>
 
@@ -105,7 +107,7 @@
     <div class="popup-content">
       <span class="close" onclick="closePopup('incitingEvent')">&times;</span>
       <h2>Inciting Event</h2>
-      <p>Starr witnesses the death of her friend Khalil, which ignites her journey toward activism and self-expression.</p>
+      <p>Starr witnesses the death of her friend Khalil, which sparks her journey toward activism and self-expression. This event exposes her to racialized violence and systemic inequities, forcing her to confront fear, grief, and societal injustice. It becomes a defining moment that sets the tone for her moral and social awakening, highlighting the emotional and psychological impact of trauma on adolescents. Through this event, Starr begins to understand her voice and her capacity to influence change, marking the beginning of her transformation into a courageous young activist.</p>
     </div>
   </div>
 
@@ -113,7 +115,7 @@
     <div class="popup-content">
       <span class="close" onclick="closePopup('conflictEvent')">&times;</span>
       <h2>Conflict</h2>
-      <p>Starr faces media scrutiny, community pressure, and the challenges of balancing her two worlds while processing grief.</p>
+      <p>Starr faces media scrutiny, community pressure, and the challenges of balancing her two worlds while processing grief. The conflicting expectations of school, family, and friends amplify her internal struggle and force her to reflect on justice, fairness, and moral responsibility. This conflict underscores the pressures adolescents face when confronted with societal inequities, teaching Starr resilience and determination while pushing her toward action and advocacy.</p>
     </div>
   </div>
 
@@ -121,7 +123,7 @@
     <div class="popup-content">
       <span class="close" onclick="closePopup('reflectionEvent')">&times;</span>
       <h2>Self-Reflection</h2>
-      <p>Starr reflects on her identity and role, questioning how she can best contribute to justice and resilience.</p>
+      <p>Starr reflects on her identity, moral values, and her role in advocating for justice. She examines how her actions affect her community and considers how to channel her experiences into meaningful change. This self-reflection helps Starr grow in agency, confidence, and resilience, reinforcing the importance of critical thought and introspection in adolescent development when confronting systemic injustice.</p>
     </div>
   </div>
 
@@ -129,7 +131,7 @@
     <div class="popup-content">
       <span class="close" onclick="closePopup('actionEvent')">&times;</span>
       <h2>Action</h2>
-      <p>Starr organizes for justice, speaks out publicly, and channels her trauma into activism, demonstrating growth and courage.</p>
+      <p>Starr channels her grief and reflection into activism, organizing protests, speaking publicly, and challenging authority to demand justice. Through these actions, she demonstrates courage, leadership, and the ability to transform trauma into purposeful advocacy. Her efforts inspire her peers and highlight the role of youth in promoting social change and confronting systemic inequities.</p>
     </div>
   </div>
 
@@ -137,16 +139,16 @@
     <div class="popup-content">
       <span class="close" onclick="closePopup('resolutionEvent')">&times;</span>
       <h2>Resolution</h2>
-      <p>Starr fully embraces her voice, identity, and role in the community, showing resilience and hope for the future.</p>
+      <p>By the conclusion of the story, Starr embraces her identity, voice, and role within her community. She finds strength in family, friends, and allies, using her experiences to inspire advocacy and positive change. The resolution reflects her journey from trauma to empowerment, illustrating resilience, hope, and the capacity for adolescents to enact meaningful social change while navigating complex societal pressures.</p>
     </div>
   </div>
 
   <!-- Analysis Section -->
   <section id="analysis">
     <h2>Critical Lens Analysis</h2>
-    <p>This website applies a Critical Race and Adolescent Experience lens to examine Starr’s journey throughout the novel. It highlights how systemic inequities and racialized violence influence her development while showing the importance of resilience, family, and community in shaping her sense of self. Starr’s growth demonstrates how young people can confront trauma, process grief, and transform difficult experiences into purposeful activism. Her story emphasizes the challenges faced by adolescents navigating complex social systems and the moral courage that emerges when individuals confront injustice directly. Through Starr’s perspective, readers witness the emotional, psychological, and social impacts of growing up in a society shaped by racial disparities and systemic oppression.</p>
-    <p>The Adolescent Experience lens also reveals how Starr navigates the demands of multiple identities in different settings, including her neighborhood, school, and social circles. Her choices reflect the pressures of adolescence while underscoring the development of agency and self-awareness in the face of injustice. By combining themes of hope, resilience, and Critical Race Theory, this website demonstrates that even within oppressive systems, young people can find their voice, assert their agency, and work toward meaningful change. The interactive design, imagery, and layout further support this exploration by visually representing Starr’s journey and the broader societal issues presented in the novel.</p>
-</section>
+    <p>This website applies a Critical Race and Adolescent Experience lens to Starr’s journey, highlighting how systemic inequities and racialized violence shape her development while emphasizing the importance of resilience, family, and community. Starr’s story illustrates how young people can confront trauma, process grief, and transform adversity into purposeful activism. Her experiences reveal the moral courage required to navigate complex social systems while asserting agency and self-expression.</p>
+    <p>The Adolescent Experience lens shows how Starr negotiates multiple identities in different spaces, reflecting the pressures of growing up under systemic oppression. Through hope, resilience, and critical awareness, Starr asserts her voice and contributes to social change. The website’s interactive design, imagery, and layout reinforce these themes, visually representing Starr’s journey and the broader social issues explored in the novel.</p>
+  </section>
 
   <!-- Contact Form -->
   <section id="contact">
@@ -162,13 +164,11 @@
     </form>
   </section>
 
-  <script src="js/main.js"></script>
+  <!-- JS for popups and smooth scroll -->
   <script>
-    // Open popup
     function openPopup(id) {
-      document.getElementById(id).style.display = 'block';
+      document.getElementById(id).style.display = 'flex';
     }
-    // Close popup
     function closePopup(id) {
       document.getElementById(id).style.display = 'none';
     }
